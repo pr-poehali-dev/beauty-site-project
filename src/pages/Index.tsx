@@ -85,16 +85,12 @@ const Index = () => {
       <header className="bg-white/80 backdrop-blur-sm border-b border-pink-100 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
-            <div className="flex items-center space-x-3">
-              <div className="flex items-center">
-                <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/70 rounded-full flex items-center justify-center mr-3">
-                  <span className="text-white font-bold text-lg">К</span>
-                </div>
-                <div>
-                  <h1 className="brand-title text-3xl text-primary leading-none">КРАСОТКА</h1>
-                  <span className="text-sm text-muted-foreground">косметическая фирма</span>
-                </div>
-              </div>
+            <div className="flex items-center space-x-2">
+              <img 
+                src="https://cdn.poehali.dev/files/a1bf1a19-ec6e-42fa-8ce6-1b64b8f442f4.png" 
+                alt="КРАСОТКА логотип" 
+                className="h-12 object-contain"
+              />
             </div>
             <nav className="hidden md:flex space-x-8">
               {['Главная', 'Каталог', 'Тени', 'Инструкции', 'О бренде', 'Контакты'].map((item) => (
@@ -119,12 +115,11 @@ const Index = () => {
             <div className="text-center lg:text-left">
               <div className="star-decoration inline-block mb-6">
                 <div className="flex items-center justify-center lg:justify-start mb-4">
-                  <div className="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center mr-4 shadow-lg">
-                    <span className="text-white font-bold text-2xl">✨</span>
-                  </div>
-                  <h1 className="brand-title text-6xl lg:text-7xl text-primary">
-                    СИЯНИЕ
-                  </h1>
+                  <img 
+                    src="https://cdn.poehali.dev/files/a9fb23d2-59dd-42df-a2f8-d30445e50539.png" 
+                    alt="СИЯНИЕ логотип" 
+                    className="h-24 lg:h-32 object-contain"
+                  />
                 </div>
               </div>
               <p className="text-2xl lg:text-3xl text-foreground/80 mb-2">тени для век</p>
@@ -326,12 +321,11 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <div className="flex items-center mb-4">
-                <div className="w-8 h-8 bg-gradient-to-br from-primary to-primary/70 rounded-full flex items-center justify-center mr-2">
-                  <span className="text-white font-bold text-sm">К</span>
-                </div>
-                <h3 className="brand-title text-2xl text-primary">КРАСОТКА</h3>
-              </div>
+              <img 
+                src="https://cdn.poehali.dev/files/a1bf1a19-ec6e-42fa-8ce6-1b64b8f442f4.png" 
+                alt="КРАСОТКА логотип" 
+                className="h-8 object-contain mb-4"
+              />
               <p className="text-gray-300 mb-4">Косметика для создания идеального образа</p>
               <div className="flex space-x-4">
                 <Icon name="Instagram" size={20} className="text-gray-300 hover:text-primary cursor-pointer transition-colors" />
