@@ -113,12 +113,12 @@ const Index = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
-              <div className="star-decoration inline-block mb-6">
+              <div className="inline-block mb-6">
                 <div className="flex items-center justify-center lg:justify-start mb-4">
                   <img 
                     src="https://cdn.poehali.dev/files/a9fb23d2-59dd-42df-a2f8-d30445e50539.png" 
                     alt="СИЯНИЕ логотип" 
-                    className="h-24 lg:h-32 object-contain"
+                    className="h-24 lg:h-32 object-contain brightness-0"
                   />
                 </div>
               </div>
@@ -305,10 +305,8 @@ const Index = () => {
             </div>
             <div className="relative">
               <div className="bg-gradient-to-br from-primary/5 to-primary/10 rounded-2xl p-8">
-                <div className="grid grid-cols-3 gap-4">
-                  {eyeshadowPalettes[0].colors.map((color, index) => (
-                    <div key={index} className="aspect-square rounded-full" style={{ backgroundColor: color }}></div>
-                  ))}
+                <div className="text-center text-muted-foreground text-lg">
+                  Премиальная косметика для современных женщин
                 </div>
               </div>
             </div>
