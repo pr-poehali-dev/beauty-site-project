@@ -85,9 +85,16 @@ const Index = () => {
       <header className="bg-white/80 backdrop-blur-sm border-b border-pink-100 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
-            <div className="flex items-center space-x-2">
-              <h1 className="brand-title text-3xl text-primary">КРАСОТКА</h1>
-              <span className="text-sm text-muted-foreground">косметическая фирма</span>
+            <div className="flex items-center space-x-3">
+              <div className="flex items-center">
+                <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/70 rounded-full flex items-center justify-center mr-3">
+                  <span className="text-white font-bold text-lg">К</span>
+                </div>
+                <div>
+                  <h1 className="brand-title text-3xl text-primary leading-none">КРАСОТКА</h1>
+                  <span className="text-sm text-muted-foreground">косметическая фирма</span>
+                </div>
+              </div>
             </div>
             <nav className="hidden md:flex space-x-8">
               {['Главная', 'Каталог', 'Тени', 'Инструкции', 'О бренде', 'Контакты'].map((item) => (
@@ -111,9 +118,14 @@ const Index = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
               <div className="star-decoration inline-block mb-6">
-                <h1 className="brand-title text-6xl lg:text-7xl text-primary mb-4">
-                  СИЯНИЕ
-                </h1>
+                <div className="flex items-center justify-center lg:justify-start mb-4">
+                  <div className="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center mr-4 shadow-lg">
+                    <span className="text-white font-bold text-2xl">✨</span>
+                  </div>
+                  <h1 className="brand-title text-6xl lg:text-7xl text-primary">
+                    СИЯНИЕ
+                  </h1>
+                </div>
               </div>
               <p className="text-2xl lg:text-3xl text-foreground/80 mb-2">тени для век</p>
               <p className="text-lg text-muted-foreground mb-8 max-w-md mx-auto lg:mx-0">
@@ -314,7 +326,12 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <h3 className="brand-title text-2xl text-primary mb-4">КРАСОТКА</h3>
+              <div className="flex items-center mb-4">
+                <div className="w-8 h-8 bg-gradient-to-br from-primary to-primary/70 rounded-full flex items-center justify-center mr-2">
+                  <span className="text-white font-bold text-sm">К</span>
+                </div>
+                <h3 className="brand-title text-2xl text-primary">КРАСОТКА</h3>
+              </div>
               <p className="text-gray-300 mb-4">Косметика для создания идеального образа</p>
               <div className="flex space-x-4">
                 <Icon name="Instagram" size={20} className="text-gray-300 hover:text-primary cursor-pointer transition-colors" />
